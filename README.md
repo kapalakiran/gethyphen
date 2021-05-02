@@ -1,10 +1,10 @@
-#Gethyphen Automation
+# Gethyphen Automation
 
-#Project Description
+# Project Description
 
       This project deals with automating the Gethyphen Application's functionalities. Test Cases are added to verify login, create new post with open & multiple choice functionalities.
 
-#Tools & Technologies 
+# Tools & Technologies 
        
       Web Application testing done using : Selenium Webdriver 
       Programming Language used : Java 
@@ -12,9 +12,9 @@
       Build Management Tool : Maven 
       Framework, Annotations and Execution : TestNG
 
-#source folders
+# source folders
 
-#src/main/java -
+# src/main/java -
 
    It has the following packages -
 
@@ -26,7 +26,7 @@
 
       It has all the page object model classes and functions, validations etc.
 
-#src/test/java
+# src/test/java
 
    It has the following package -
 
@@ -36,7 +36,7 @@
       1. CreateNewPostTCs - contains TC's related to create new post with all Post & Question type
       2. LoginPageTCs - contains TC's related to login functionality
    
-#src/main/resources
+# src/main/resources
 
    It has the following folder -
 
@@ -46,11 +46,11 @@
 
 Other important files in the project are as follows-
 
-      #testngxml/gethyphentestng.xml
+# testngxml/gethyphentestng.xml
            It helps us to execute the testcases
 
-      #pom.xml
+# pom.xml
           It holds the dependencies required for the project execution
 
-      #ExtentReports
+# ExtentReports
           It is the Open source reporting library used to depict the results of the test execution
