@@ -62,14 +62,13 @@ public class SignInPage extends BaseFunctions{
 	 * @return
 	 */
 	public Boolean verifyWithInvalidEmailID(String userName) {
-		Boolean Status = false;
+		Boolean status = false;
 		enterText(emailAndPwdTb, userName, "Email");
 		 new ReUsableFunctions(driver).selectSubmitBtn();
-		if(signUp_LogBackInText.getText().equals("Sign up / Log back in")) {
+		if(status = signUp_LogBackInText.getText().equals("Sign up / Log back in")) {
 			logPassed("Unable to navigate to next screen as we tried with login");
-			Status = true;
 		}else
 			logFailed("Able to navigate to next screen as we tried with login");
-		return Status;	
+		return status;	
 	}
 }
