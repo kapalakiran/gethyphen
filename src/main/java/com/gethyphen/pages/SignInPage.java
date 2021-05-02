@@ -50,10 +50,7 @@ public class SignInPage extends BaseFunctions{
 	 */
 	public String verifyErrorFieldText() throws InterruptedException {
 		customWait(2000);
-		String error = "";
-		if(isElementPresent(errorFieldText))
-			error = errorFieldText.getText();
-		return error;
+		return isElementPresent(errorFieldText)?errorFieldText.getText():"";
 	}
 	/**
 	 * @author kirankumar 
