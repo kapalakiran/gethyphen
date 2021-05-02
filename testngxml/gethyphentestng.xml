@@ -11,9 +11,9 @@
 		
 		<!-- <packages> <package name="com.web.gethyphen.testcases" /> </packages> -->
 		<classes>
-			<class name="com.web.gethyphen.testcases.GetHyphenTCs">
+			<class name="com.web.gethyphen.testcases.CreateNewPostTCs">
 			</class>
-			<class name="com.web.gethyphen.testcases.LoginPageTC">
+			<class name="com.web.gethyphen.testcases.LoginPageTCs">
 			</class>
 		</classes>
 	</test>

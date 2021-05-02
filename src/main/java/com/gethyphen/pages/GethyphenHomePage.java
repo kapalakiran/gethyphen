@@ -46,16 +46,16 @@ public class GethyphenHomePage extends BaseFunctions {
 	private WebElement questionTxt;
 
 	@FindBy(css="div.voteOptionWrapper span")
-	private List<WebElement> answerOtionBtns;
+	private List<WebElement> answerOptionBtns;
 
 	@FindBy(css="textarea[name=comment]")
 	private WebElement commentTb;
 
-	public static enum PostType{
+	public static enum POSTYPE{
 		Anonymous,Official,Named;
 	}
 
-	public static enum QuestionType{
+	public static enum QUESTIONTYPE{
 		Open,MultipleChoice;
 	}
 
@@ -69,20 +69,20 @@ public class GethyphenHomePage extends BaseFunctions {
 	 * @param create New Post Type & questions type
 	 * @return
 	 */
-	public Boolean selectCreateNewPostTypeAndQuestionType(PostType createNewPostType,QuestionType selectQuestionType) {
+	public Boolean selectCreateNewPostTypeAndQuestionType(POSTYPE createNewPostType,QUESTIONTYPE selectQuestionType) {
 		Boolean createNewPostStatus = true,questionTypeStatus = false;
 		try {
-			if(PostType.Anonymous == createNewPostType) {
+			if(POSTYPE.Anonymous == createNewPostType) {
 				if(!(getAtttributeValue(createNewPostRadioBtns.get(0), "class").contains("checked")))
 					createNewPostStatus = click(createNewPostRadioBtns.get(0),createNewPostType.toString());
-			}else if(PostType.Official == createNewPostType) {
+			}else if(POSTYPE.Official == createNewPostType) {
 				if(!(getAtttributeValue(createNewPostRadioBtns.get(1), "class").contains("checked")))
 					createNewPostStatus = click(createNewPostRadioBtns.get(1),createNewPostType.toString());
-			}else if(PostType.Named == createNewPostType) {
+			}else if(POSTYPE.Named == createNewPostType) {
 				if(!(getAtttributeValue(createNewPostRadioBtns.get(2), "class").contains("checked")))
 					createNewPostStatus = click(createNewPostRadioBtns.get(2),createNewPostType.toString());
 			}
-			if(QuestionType.Open==selectQuestionType)
+			if(QUESTIONTYPE.Open==selectQuestionType)
 				questionTypeStatus = click(openAndMultipleChoiceBtns.get(0), "Open");
 			else
 				questionTypeStatus = click(openAndMultipleChoiceBtns.get(1), "Multiple Choice");
@@ -143,9 +143,9 @@ public class GethyphenHomePage extends BaseFunctions {
 	 */
 	public Boolean verifyMultipleChoiceButtons(	HashMap<String, String> postDetails) {
 		List<Boolean> status = new ArrayList<Boolean>();
-		waitUntilElementFound(answerOtionBtns.get(0));
+		waitUntilElementFound(answerOptionBtns.get(0));
 		for(int i=0;i<postDetails.size()-1;i++) {
-			String option = answerOtionBtns.get(i).getText();
+			String option = answerOptionBtns.get(i).getText();
 			if(postDetails.containsValue(option)) {
 				logPassed("Option "+option+" are verified");
 				status.add(true);
@@ -162,22 +162,22 @@ public class GethyphenHomePage extends BaseFunctions {
 	 * @param selectQuestionType
 	 * @return
 	 */
-	public Boolean createNewPostAndVerifyIt(PostType createNewPostType,QuestionType selectQuestionType) {
+	public Boolean createNewPostAndVerifyIt(POSTYPE createNewPostType,QUESTIONTYPE selectQuestionType) {
 		try {
 			click(createNewPostBtn, "Create New Post");
 			selectCreateNewPostTypeAndQuestionType(createNewPostType,selectQuestionType);
 			selectPostGroup();
 			HashMap<String, String> postDetails = new HashMap<String, String>();
-			if(QuestionType.Open==selectQuestionType)
+			if(QUESTIONTYPE.Open==selectQuestionType)
 				postDetails = writeNewOpenPostAndSubmit();
-			else if(QuestionType.MultipleChoice==selectQuestionType)
+			else if(QUESTIONTYPE.MultipleChoice==selectQuestionType)
 				postDetails = writeNewMultipleChoicePostAndSubmit();
 			customWait(2000);
 			if(questionTxt.getText().equalsIgnoreCase(postDetails.get("Question")))
 				logPassed("Question text is verified");
 			else
 				logFailed("Question text is different");
-			if(QuestionType.Open==selectQuestionType)
+			if(QUESTIONTYPE.Open==selectQuestionType)
 				return isElementPresent(commentTb);
 			else
 				return verifyMultipleChoiceButtons(postDetails);

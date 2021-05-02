@@ -2,12 +2,17 @@
 
 #Project Description
 
-This project deals with automating the Gethyphen Application's functionalities. Test Cases are added to verify login, create new post with open & multiple choice functionalities.
+This project deals with automating the Gethyphen Application's functionalities. Test Cases are added to verify login, create new post with open & multiple choice questions.
 
 #Tools & Technologies 
-Web Application testing done using : Selenium Webdriver Programming Language used : Java Design Pattern : Page Object Model with Page Factory Build Management Tool : Maven Framework, Annotations and Execution : TestNG
+Web Application testing done using : Selenium Webdriver 
+Programming Language used : Java 
+Design Pattern : Page Object Model with Page Factory
+Build Management Tool : Maven
+Annotations and Execution : TestNG
 
-#source folders
+
+#source folders ->
 
 #src/main/java -
 

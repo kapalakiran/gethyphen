@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="GethyphenTestSuite" duration-ms="166030" started-at="2021-05-02T12:51:42Z" finished-at="2021-05-02T12:54:29Z">
+  <suite name="GethyphenTestSuite" duration-ms="165790" started-at="2021-05-02T13:50:58Z" finished-at="2021-05-02T13:53:44Z">
     <groups>
     </groups>
-    <test name="Login" duration-ms="166030" started-at="2021-05-02T12:51:42Z" finished-at="2021-05-02T12:54:29Z">
-      <class name="com.web.gethyphen.testcases.LoginPageTC">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.LoginPageTC@5f9b2141]" name="setUp" is-config="true" duration-ms="6521" started-at="2021-05-02T12:53:53Z" finished-at="2021-05-02T12:54:00Z">
+    <test name="Login" duration-ms="165790" started-at="2021-05-02T13:50:58Z" finished-at="2021-05-02T13:53:44Z">
+      <class name="com.web.gethyphen.testcases.CreateNewPostTCs">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="9605" started-at="2021-05-02T13:50:58Z" finished-at="2021-05-02T13:51:07Z">
           <params>
             <param index="0">
               <value>
@@ -16,100 +16,26 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.web.gethyphen.testcases.LoginPageTC.verifyLoginWithInValidEmail() throws java.lang.InterruptedException,java.io.IOException]]>
+                <![CDATA[public void com.web.gethyphen.testcases.CreateNewPostTCs.createNewPostWithAnonymousPostTypeAndMultipleChoicenQuestion()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginWithInValidEmail()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTC@5f9b2141]" name="verifyLoginWithInValidEmail" duration-ms="288" started-at="2021-05-02T12:54:00Z" finished-at="2021-05-02T12:54:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInValidEmail -->
-        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTC@5f9b2141]" name="closeTheBrowser" is-config="true" duration-ms="147" started-at="2021-05-02T12:54:00Z" finished-at="2021-05-02T12:54:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheBrowser -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.LoginPageTC@5f9b2141]" name="setUp" is-config="true" duration-ms="6902" started-at="2021-05-02T12:54:00Z" finished-at="2021-05-02T12:54:07Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[src/main/resources/prod/gethyphen.properties]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.web.gethyphen.testcases.LoginPageTC.verifyLoginWithValidCredentials() throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginWithValidCredentials()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTC@5f9b2141]" name="verifyLoginWithValidCredentials" duration-ms="6546" started-at="2021-05-02T12:54:07Z" finished-at="2021-05-02T12:54:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTC@5f9b2141]" name="closeTheBrowser" is-config="true" duration-ms="154" started-at="2021-05-02T12:54:14Z" finished-at="2021-05-02T12:54:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheBrowser -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.LoginPageTC@5f9b2141]" name="setUp" is-config="true" duration-ms="8759" started-at="2021-05-02T12:54:14Z" finished-at="2021-05-02T12:54:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[src/main/resources/prod/gethyphen.properties]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.web.gethyphen.testcases.LoginPageTC.verifyLoginWithValidUserNameAndInValidPassword() throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginWithValidUserNameAndInValidPassword()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTC@5f9b2141]" name="verifyLoginWithValidUserNameAndInValidPassword" duration-ms="5561" started-at="2021-05-02T12:54:23Z" finished-at="2021-05-02T12:54:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidUserNameAndInValidPassword -->
-        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTC@5f9b2141]" name="closeTheBrowser" is-config="true" duration-ms="150" started-at="2021-05-02T12:54:28Z" finished-at="2021-05-02T12:54:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeTheBrowser -->
-      </class> <!-- com.web.gethyphen.testcases.LoginPageTC -->
-      <class name="com.web.gethyphen.testcases.GetHyphenTCs">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="7839" started-at="2021-05-02T12:51:42Z" finished-at="2021-05-02T12:51:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[src/main/resources/prod/gethyphen.properties]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[public void com.web.gethyphen.testcases.GetHyphenTCs.createNewPostWithAnonymousPostTypeAndMultipleChoicenQuestion()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="login" is-config="true" duration-ms="3702" started-at="2021-05-02T12:51:50Z" finished-at="2021-05-02T12:51:54Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="login" is-config="true" duration-ms="3826" started-at="2021-05-02T13:51:07Z" finished-at="2021-05-02T13:51:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createNewPostWithAnonymousPostTypeAndMultipleChoicenQuestion()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="createNewPostWithAnonymousPostTypeAndMultipleChoicenQuestion" duration-ms="9426" started-at="2021-05-02T12:51:54Z" finished-at="2021-05-02T12:52:03Z">
+        <test-method status="PASS" signature="createNewPostWithAnonymousPostTypeAndMultipleChoicenQuestion()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="createNewPostWithAnonymousPostTypeAndMultipleChoicenQuestion" duration-ms="10714" started-at="2021-05-02T13:51:11Z" finished-at="2021-05-02T13:51:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewPostWithAnonymousPostTypeAndMultipleChoicenQuestion -->
-        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="352" started-at="2021-05-02T12:52:03Z" finished-at="2021-05-02T12:52:04Z">
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="488" started-at="2021-05-02T13:51:22Z" finished-at="2021-05-02T13:51:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="9913" started-at="2021-05-02T12:52:04Z" finished-at="2021-05-02T12:52:14Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="7673" started-at="2021-05-02T13:51:23Z" finished-at="2021-05-02T13:51:30Z">
           <params>
             <param index="0">
               <value>
@@ -118,26 +44,26 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.web.gethyphen.testcases.GetHyphenTCs.createNewPostWithAnonymousPostTypeAndOpenQuestion()]]>
+                <![CDATA[public void com.web.gethyphen.testcases.CreateNewPostTCs.createNewPostWithAnonymousPostTypeAndOpenQuestion()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="login" is-config="true" duration-ms="3567" started-at="2021-05-02T12:52:14Z" finished-at="2021-05-02T12:52:17Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="login" is-config="true" duration-ms="3717" started-at="2021-05-02T13:51:30Z" finished-at="2021-05-02T13:51:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createNewPostWithAnonymousPostTypeAndOpenQuestion()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="createNewPostWithAnonymousPostTypeAndOpenQuestion" duration-ms="8473" started-at="2021-05-02T12:52:17Z" finished-at="2021-05-02T12:52:26Z">
+        <test-method status="PASS" signature="createNewPostWithAnonymousPostTypeAndOpenQuestion()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="createNewPostWithAnonymousPostTypeAndOpenQuestion" duration-ms="9179" started-at="2021-05-02T13:51:34Z" finished-at="2021-05-02T13:51:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewPostWithAnonymousPostTypeAndOpenQuestion -->
-        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="143" started-at="2021-05-02T12:52:26Z" finished-at="2021-05-02T12:52:26Z">
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="190" started-at="2021-05-02T13:51:43Z" finished-at="2021-05-02T13:51:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="9829" started-at="2021-05-02T12:52:26Z" finished-at="2021-05-02T12:52:36Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="7260" started-at="2021-05-02T13:51:43Z" finished-at="2021-05-02T13:51:51Z">
           <params>
             <param index="0">
               <value>
@@ -146,26 +72,26 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.web.gethyphen.testcases.GetHyphenTCs.createNewPostWithNamedPostTypeAndMultipleChoicenQuestion()]]>
+                <![CDATA[public void com.web.gethyphen.testcases.CreateNewPostTCs.createNewPostWithNamedPostTypeAndMultipleChoicenQuestion()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="login" is-config="true" duration-ms="3547" started-at="2021-05-02T12:52:36Z" finished-at="2021-05-02T12:52:39Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="login" is-config="true" duration-ms="3636" started-at="2021-05-02T13:51:51Z" finished-at="2021-05-02T13:51:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createNewPostWithNamedPostTypeAndMultipleChoicenQuestion()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="createNewPostWithNamedPostTypeAndMultipleChoicenQuestion" duration-ms="9465" started-at="2021-05-02T12:52:39Z" finished-at="2021-05-02T12:52:49Z">
+        <test-method status="PASS" signature="createNewPostWithNamedPostTypeAndMultipleChoicenQuestion()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="createNewPostWithNamedPostTypeAndMultipleChoicenQuestion" duration-ms="10224" started-at="2021-05-02T13:51:54Z" finished-at="2021-05-02T13:52:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewPostWithNamedPostTypeAndMultipleChoicenQuestion -->
-        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="164" started-at="2021-05-02T12:52:49Z" finished-at="2021-05-02T12:52:49Z">
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="204" started-at="2021-05-02T13:52:04Z" finished-at="2021-05-02T13:52:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="7046" started-at="2021-05-02T12:52:49Z" finished-at="2021-05-02T12:52:56Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="7210" started-at="2021-05-02T13:52:05Z" finished-at="2021-05-02T13:52:12Z">
           <params>
             <param index="0">
               <value>
@@ -174,26 +100,26 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.web.gethyphen.testcases.GetHyphenTCs.createNewPostWithNamedPostTypeAndOpenQuestion()]]>
+                <![CDATA[public void com.web.gethyphen.testcases.CreateNewPostTCs.createNewPostWithNamedPostTypeAndOpenQuestion()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="login" is-config="true" duration-ms="3556" started-at="2021-05-02T12:52:56Z" finished-at="2021-05-02T12:53:00Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="login" is-config="true" duration-ms="3873" started-at="2021-05-02T13:52:12Z" finished-at="2021-05-02T13:52:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createNewPostWithNamedPostTypeAndOpenQuestion()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="createNewPostWithNamedPostTypeAndOpenQuestion" duration-ms="8543" started-at="2021-05-02T12:53:00Z" finished-at="2021-05-02T12:53:08Z">
+        <test-method status="PASS" signature="createNewPostWithNamedPostTypeAndOpenQuestion()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="createNewPostWithNamedPostTypeAndOpenQuestion" duration-ms="9431" started-at="2021-05-02T13:52:16Z" finished-at="2021-05-02T13:52:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewPostWithNamedPostTypeAndOpenQuestion -->
-        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="154" started-at="2021-05-02T12:53:08Z" finished-at="2021-05-02T12:53:08Z">
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="211" started-at="2021-05-02T13:52:25Z" finished-at="2021-05-02T13:52:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="12880" started-at="2021-05-02T12:53:08Z" finished-at="2021-05-02T12:53:21Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="7255" started-at="2021-05-02T13:52:25Z" finished-at="2021-05-02T13:52:33Z">
           <params>
             <param index="0">
               <value>
@@ -202,26 +128,26 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.web.gethyphen.testcases.GetHyphenTCs.createNewPostWithOfficialPostTypeAndMultipleChoicenQuestion()]]>
+                <![CDATA[public void com.web.gethyphen.testcases.CreateNewPostTCs.createNewPostWithOfficialPostTypeAndMultipleChoicenQuestion()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="login" is-config="true" duration-ms="3568" started-at="2021-05-02T12:53:21Z" finished-at="2021-05-02T12:53:25Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="login" is-config="true" duration-ms="3726" started-at="2021-05-02T13:52:33Z" finished-at="2021-05-02T13:52:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createNewPostWithOfficialPostTypeAndMultipleChoicenQuestion()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="createNewPostWithOfficialPostTypeAndMultipleChoicenQuestion" duration-ms="9443" started-at="2021-05-02T12:53:25Z" finished-at="2021-05-02T12:53:34Z">
+        <test-method status="PASS" signature="createNewPostWithOfficialPostTypeAndMultipleChoicenQuestion()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="createNewPostWithOfficialPostTypeAndMultipleChoicenQuestion" duration-ms="10650" started-at="2021-05-02T13:52:36Z" finished-at="2021-05-02T13:52:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewPostWithOfficialPostTypeAndMultipleChoicenQuestion -->
-        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="160" started-at="2021-05-02T12:53:34Z" finished-at="2021-05-02T12:53:34Z">
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="214" started-at="2021-05-02T13:52:47Z" finished-at="2021-05-02T13:52:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="7056" started-at="2021-05-02T12:53:34Z" finished-at="2021-05-02T12:53:41Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="setUp" is-config="true" duration-ms="6861" started-at="2021-05-02T13:52:47Z" finished-at="2021-05-02T13:52:54Z">
           <params>
             <param index="0">
               <value>
@@ -230,26 +156,100 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.web.gethyphen.testcases.GetHyphenTCs.createNewPostWithOfficialPostTypeAndOpenQuestion()]]>
+                <![CDATA[public void com.web.gethyphen.testcases.CreateNewPostTCs.createNewPostWithOfficialPostTypeAndOpenQuestion()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="login" is-config="true" duration-ms="3466" started-at="2021-05-02T12:53:41Z" finished-at="2021-05-02T12:53:45Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="login" is-config="true" duration-ms="3670" started-at="2021-05-02T13:52:54Z" finished-at="2021-05-02T13:52:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createNewPostWithOfficialPostTypeAndOpenQuestion()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="createNewPostWithOfficialPostTypeAndOpenQuestion" duration-ms="8528" started-at="2021-05-02T12:53:45Z" finished-at="2021-05-02T12:53:53Z">
+        <test-method status="PASS" signature="createNewPostWithOfficialPostTypeAndOpenQuestion()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="createNewPostWithOfficialPostTypeAndOpenQuestion" duration-ms="9257" started-at="2021-05-02T13:52:58Z" finished-at="2021-05-02T13:53:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewPostWithOfficialPostTypeAndOpenQuestion -->
-        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.GetHyphenTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="154" started-at="2021-05-02T12:53:53Z" finished-at="2021-05-02T12:53:53Z">
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.CreateNewPostTCs@550ee7e5]" name="closeTheBrowser" is-config="true" duration-ms="203" started-at="2021-05-02T13:53:07Z" finished-at="2021-05-02T13:53:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeTheBrowser -->
-      </class> <!-- com.web.gethyphen.testcases.GetHyphenTCs -->
+      </class> <!-- com.web.gethyphen.testcases.CreateNewPostTCs -->
+      <class name="com.web.gethyphen.testcases.LoginPageTCs">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.LoginPageTCs@5f9b2141]" name="setUp" is-config="true" duration-ms="7068" started-at="2021-05-02T13:53:07Z" finished-at="2021-05-02T13:53:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/main/resources/prod/gethyphen.properties]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.web.gethyphen.testcases.LoginPageTCs.verifyLoginWithInValidEmail() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginWithInValidEmail()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTCs@5f9b2141]" name="verifyLoginWithInValidEmail" duration-ms="391" started-at="2021-05-02T13:53:14Z" finished-at="2021-05-02T13:53:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInValidEmail -->
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTCs@5f9b2141]" name="closeTheBrowser" is-config="true" duration-ms="208" started-at="2021-05-02T13:53:15Z" finished-at="2021-05-02T13:53:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.LoginPageTCs@5f9b2141]" name="setUp" is-config="true" duration-ms="8612" started-at="2021-05-02T13:53:15Z" finished-at="2021-05-02T13:53:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/main/resources/prod/gethyphen.properties]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.web.gethyphen.testcases.LoginPageTCs.verifyLoginWithValidCredentials() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginWithValidCredentials()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTCs@5f9b2141]" name="verifyLoginWithValidCredentials" duration-ms="7005" started-at="2021-05-02T13:53:23Z" finished-at="2021-05-02T13:53:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTCs@5f9b2141]" name="closeTheBrowser" is-config="true" duration-ms="220" started-at="2021-05-02T13:53:30Z" finished-at="2021-05-02T13:53:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.web.gethyphen.testcases.LoginPageTCs@5f9b2141]" name="setUp" is-config="true" duration-ms="7145" started-at="2021-05-02T13:53:31Z" finished-at="2021-05-02T13:53:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[src/main/resources/prod/gethyphen.properties]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.web.gethyphen.testcases.LoginPageTCs.verifyLoginWithValidUserNameAndInValidPassword() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginWithValidUserNameAndInValidPassword()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTCs@5f9b2141]" name="verifyLoginWithValidUserNameAndInValidPassword" duration-ms="5633" started-at="2021-05-02T13:53:38Z" finished-at="2021-05-02T13:53:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidUserNameAndInValidPassword -->
+        <test-method status="PASS" signature="closeTheBrowser()[pri:0, instance:com.web.gethyphen.testcases.LoginPageTCs@5f9b2141]" name="closeTheBrowser" is-config="true" duration-ms="192" started-at="2021-05-02T13:53:43Z" finished-at="2021-05-02T13:53:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- com.web.gethyphen.testcases.LoginPageTCs -->
     </test> <!-- Login -->
   </suite> <!-- GethyphenTestSuite -->
 </testng-results>
