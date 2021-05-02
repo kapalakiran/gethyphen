@@ -5,13 +5,13 @@ import java.io.IOException;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.gethyphen.app.pages.GethyphenHomePage;
-import com.gethyphen.app.pages.GethyphenHomePage.PostType;
-import com.gethyphen.app.pages.GethyphenHomePage.QuestionType;
-import com.gethyphen.app.pages.SignInPage;
+import com.gethyphen.pages.GethyphenHomePage;
+import com.gethyphen.pages.SignInPage;
+import com.gethyphen.pages.GethyphenHomePage.PostType;
+import com.gethyphen.pages.GethyphenHomePage.QuestionType;
 import com.utilities.BaseFunctions;
 
-public class GetHyphenTCs extends BaseFunctions{
+public class CreateNewPostTCs extends BaseFunctions{
 
 	@BeforeMethod
 	public void login() throws IOException, InterruptedException{

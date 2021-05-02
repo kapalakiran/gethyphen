@@ -4,12 +4,12 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import com.gethyphen.app.pages.GethyphenHomePage;
-import com.gethyphen.app.pages.SignInPage;
+import com.gethyphen.pages.GethyphenHomePage;
+import com.gethyphen.pages.SignInPage;
 import com.utilities.BaseFunctions;
 import com.utilities.TestDataGenerator;
 
-public class LoginPageTC extends BaseFunctions{
+public class LoginPageTCs extends BaseFunctions{
 
    @Test
    public void verifyLoginWithValidCredentials() throws InterruptedException, IOException {

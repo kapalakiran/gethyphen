@@ -1,4 +1,4 @@
-package com.gethyphen.app.pages;
+package com.gethyphen.pages;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -59,6 +59,10 @@ public class GethyphenHomePage extends BaseFunctions {
 		Open,MultipleChoice;
 	}
 
+	public GethyphenHomePage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+	
 	/**
 	 * @author kirankumar 
 	 * @description - select create new post type
@@ -101,6 +105,11 @@ public class GethyphenHomePage extends BaseFunctions {
 		return selectedDrpDwn;
 	}
 
+	/**
+	 * @author kirankumar
+	 * @description - to write new open post & submit
+	 * @return
+	 */
 	public HashMap<String, String> writeNewOpenPostAndSubmit() {
 		HashMap<String, String>openQuesDetails = new HashMap<String, String>();
 		openQuesDetails.put("Question",TestDataGenerator.getRandomNumberBetweenRange(10000, 100000000)+"");
@@ -109,6 +118,11 @@ public class GethyphenHomePage extends BaseFunctions {
 		return openQuesDetails;
 	}
 
+	/**
+	 * @author kirankumar
+	 * @description - to write new multiple choice post & submit
+	 * @return
+	 */
 	public HashMap<String, String> writeNewMultipleChoicePostAndSubmit() {
 		HashMap<String, String> multipleChoiceQuesDetails = new HashMap<String, String>();
 		multipleChoiceQuesDetails.put("Question",TestDataGenerator.getRandomNumberBetweenRange(10000, 100000000)+"");
@@ -120,9 +134,7 @@ public class GethyphenHomePage extends BaseFunctions {
 		new ReUsableFunctions(driver).selectSubmitBtn();
 		return multipleChoiceQuesDetails;
 	}
-	public GethyphenHomePage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
-	}
+
 	/**
 	 * @author kirankumar 
 	 * @description to verify multiple choice options
