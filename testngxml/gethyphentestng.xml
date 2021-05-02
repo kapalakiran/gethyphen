@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" name="GethyphenTestSuite">
+
+	<parameter name="Environment"
+		value="src/main/resources/prod/gethyphen.properties" />
+
+
+	<test name="Login">
+		
+		<!-- <packages> <package name="com.web.gethyphen.testcases" /> </packages> -->
+		<classes>
+			<class name="com.web.gethyphen.testcases.GetHyphenTCs">
+			</class>
+			<class name="com.web.gethyphen.testcases.LoginPageTC">
+			</class>
+		</classes>
+	</test>
+</suite>
