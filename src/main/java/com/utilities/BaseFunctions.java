@@ -171,10 +171,8 @@ public class BaseFunctions extends TestBase{
 		try {
 			if (element.isDisplayed() || element.isEnabled())
 				flag = true;
-		} catch (NoSuchElementException e) {
-			flag = false;
-		} catch (StaleElementReferenceException e) {
-			flag = false;
+		} catch (NoSuchElementException | StaleElementReferenceException e ) {
+			test.info(e.toString());
 		}
 		return flag;
 	}
