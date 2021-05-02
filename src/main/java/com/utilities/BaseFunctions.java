@@ -36,9 +36,8 @@ public class BaseFunctions extends TestBase{
 
 	public void enterText(WebElement element, String textToEnter,String Label) {
 		try {
-			if(element.getAttribute("value").length()>0|| element.getText().length()>0){
+			if(element.getAttribute("value").length()>0|| element.getText().length()>0)
 				element.clear();
-			}
 			element.sendKeys(textToEnter);
 		}catch (Exception e) {
 			logFailed(e.getMessage().toString());
@@ -143,14 +142,14 @@ public class BaseFunctions extends TestBase{
 	}
 
 	public Boolean selectValueFromListOfWebElements(List<WebElement> lstOfWebElements,String expectedText) {
-		Boolean Status = false;
+		Boolean status = false;
 		for(WebElement webElement : lstOfWebElements) {
 			if(webElement.getText().equalsIgnoreCase(expectedText)) {
-				Status= click(webElement, "Expected Text");
+				status= click(webElement, "Expected Text");
 				break;
 			}
 		}
-		return Status;
+		return status;
 	}
 	/**
 	 * @author kirankumar 
