@@ -240,11 +240,10 @@ public class BaseFunctions extends TestBase{
 		Boolean success = false;
 		try {
 			WebDriverWait wait = new WebDriverWait(driver,30);
-
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 			success = true;
 		} catch (Exception e) {
-
+            logInfo("Element is not clickable");
 		} finally {
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
